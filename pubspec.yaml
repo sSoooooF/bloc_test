@@ -4,24 +4,25 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.4 <4.0.0'
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
+  authentication_repository:
+    path: packages/authentication_repository
+  bloc: ^8.1.0
+  equatable: ^2.0.3
   flutter:
     sdk: flutter
-  bloc: ^8.1.4
-
-  cupertino_icons: ^1.0.6
+  flutter_bloc: ^8.1.1
+  formz: ^0.6.0
+  user_repository:
+    path: packages/user_repository
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-
-  flutter_lints: ^3.0.0
-
+  mocktail: ^1.0.0
 
 flutter:
-
   uses-material-design: true
 
